@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/car</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping resource="weprosever/model/User.hbm.xml"/>
+      <mapping class="weprosever.model.User"/>
+      <mapping resource="weprosever/model/Article.hbm.xml"/>
+      <mapping class="weprosever.model.Article"/>
+      <mapping resource="weprosever/model/Video.hbm.xml"/>
+      <mapping class="weprosever.model.Video"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

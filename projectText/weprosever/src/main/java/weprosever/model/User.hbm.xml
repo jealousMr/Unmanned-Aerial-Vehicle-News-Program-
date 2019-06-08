@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="weprosever.model.User" table="user" schema="car">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="userId">
+            <column name="user_id" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="nickName">
+            <column name="nick_name" sql-type="varchar(60)" length="60"/>
+        </property>
+        <property name="imgUrl">
+            <column name="img_url" sql-type="varchar(225)" length="225"/>
+        </property>
+        <property name="articleSum">
+            <column name="article_sum" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="videoSum">
+            <column name="video_sum" sql-type="int(11)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

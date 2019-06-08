@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/person/main",
+    "pages/article_detail/main",
+    "pages/sendArticle/main",
+    "pages/collectionArticle/main",
+    "pages/readingHistory/main",
+    "pages/concern/main",
+    "pages/sendVideo/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

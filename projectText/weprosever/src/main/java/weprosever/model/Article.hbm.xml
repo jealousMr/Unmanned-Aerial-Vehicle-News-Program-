@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="weprosever.model.Article" table="article" schema="car">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="articleId">
+            <column name="article_id" sql-type="varchar(225)" length="225" not-null="true"/>
+        </property>
+        <property name="userId">
+            <column name="user_id" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="title">
+            <column name="title" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="titleTwo">
+            <column name="title_two" sql-type="varchar(60)" length="60"/>
+        </property>
+        <property name="imgUrl">
+            <column name="img_url" sql-type="varchar(225)" length="225"/>
+        </property>
+        <property name="content">
+            <column name="content" sql-type="text"/>
+        </property>
+        <property name="sendTime">
+            <column name="send_time" sql-type="varchar(30)" length="30"/>
+        </property>
+    </class>
+</hibernate-mapping>
